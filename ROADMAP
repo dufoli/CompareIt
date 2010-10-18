@@ -1,0 +1,73 @@
+Specification of compareIt:
+
+Goal: produce a little website which provide the ability to compare things:
+software,
+Political options,
+manufactured things,
+...
+
+The most important is to KISS (keep it simple stupid).
+So hide complexity!
+
+Use case:
+So, we just start to add a new comparaison page:
+
+This comparaison page will be the link:
+www.compareit.com/MyComparaison
+
+This new page can contain a small description in HTML to sum up what we compare 
+and a list of ability which will be what we compare really on comparaison item.
+
+Ability have a type (bool, string, number, state)
+state will alow to have different state as an enum (color, day or even [N/A, started, ended, work in progress]
+Best: autodetect type.
+
+We can filter to remove all items not needed.
+www.compareit.com/MyComparaison?item1=5&item2=3
+
+and we can hide easily on a page similare ability if same on all items.
+
+
+page layout:
+
+<title1>Title</title1>
+
+My description.....
+blabla
+bar <size=5>foo</size>
+
+| 		    |	Item1  	|	Item2	|	Item3	|
+| ability1	|	ok  	|	KO		|	OK		|
+| ability2	|	3  		|	2		|	1		|
+...
+
+
+
+it is the basic for 0.1 release
+
+0.2:
+
+Create Mind map from 2 abilities and items.
+reorder colonne
+Make ability line disapear when same on each item
+colore cells according conditional rule 
+	(by default number from green to red, OK green, KO red)
+group of ability
+historgramme
+camember
+...
+Benchmark module
+exportable data
+primary and secondary color between each line
+security layer to
+	restrict editor
+		by default all reader are editor
+	restrict reader
+
+other todo: logo, moteur de rechercher inscription
+
+item short descirption is print with tooltip
+else click on item to know more about item.
+
+webservice to link to wikipedia description.
+webservice of google to translate page.
