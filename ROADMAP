@@ -71,3 +71,37 @@ else click on item to know more about item.
 
 webservice to link to wikipedia description.
 webservice of google to translate page.
+
+
+
+
+MCD:
+
+comparison:
+Id
+Name
+Description
+
+comparisonItem:
+Id
+Name
+ComparisonId
+Short Description
+Description
+Link
+
+ability
+Id
+Name
+ComparisonId
+Type
+
+AbilityType
+Id
+Name
+
+
+
+
+
+
